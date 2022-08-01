@@ -1,0 +1,31 @@
+{
+    "name": "octopusosc/admin-layout",
+    "description": "Octopus Osc Admin Layout",
+    "authors": [
+        {
+            "name": "Levi Luong",
+            "email": "luongtien270297@gmail.com"
+        }
+    ],
+    "require": {
+        "octopusosc/framework": "dev-main"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "OctopusOsc\\AdminLayout\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OctopusOsc\\AdminLayout\\Providers\\AdminLayoutServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
