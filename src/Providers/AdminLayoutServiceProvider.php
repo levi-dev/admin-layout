@@ -1,6 +1,6 @@
 <?php
 
-namespace OctopusOsc\Core\Providers;
+namespace OctopusOsc\AdminLayout\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use OctopusOsc\Core\Commands\ModuleListCommand;
