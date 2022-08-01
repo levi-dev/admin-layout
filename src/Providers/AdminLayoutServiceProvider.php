@@ -14,5 +14,18 @@ class AdminLayoutServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->loadRoutesFrom(__DIR__ . "/../routes/web.php");
+        $this->loadViewsFrom(__DIR__ . "/../resources/views", "admin-layout");
+        $path = __DIR__ . "/../resources/assets";
+//        $this->publishes([$this->getAssetsPath() => __DIR__ . "/../resources/assets"], "admin-layout");
+        $this->publishes([$this->getAssetsPath() => $path], "admin-layout");
+    }
+
+    /**
+     * @return string
+     */
+    protected function getAssetsPath(): string
+    {
+        return public_path();
     }
 }
