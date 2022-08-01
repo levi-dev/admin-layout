@@ -10,6 +10,12 @@
     "require": {
         "octopusosc/framework": "dev-main"
     },
+    "repositories": {
+        "octopusosc/framework": {
+            "type": "vcs",
+            "url": "git@github.com:levi-dev/framework.git"
+        }
+    },
     "autoload": {
         "files": [
             "registration.php"
