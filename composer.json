@@ -21,13 +21,13 @@
             "registration.php"
         ],
         "psr-4": {
-            "OctopusOsc\\AdminLayout\\": "src"
+            "OctopusOsc\\AdminLayout\\": ""
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "OctopusOsc\\AdminLayout\\Providers\\AdminLayoutServiceProvider"
+                "OctopusOsc\\AdminLayout\\Providers\\AppServiceProvider"
             ],
             "aliases": {
             }
