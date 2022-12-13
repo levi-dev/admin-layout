@@ -7,7 +7,7 @@ use OctopusOsc\AdminLayout\Core\Adapters\Container;
 class Page
 {
     protected $container;
-    const PREFIX = "admin";
+    const PREFIX = "OctopusOsc_AdminLayout";
     protected static $containers = [];
 
     public function addContainer($container)

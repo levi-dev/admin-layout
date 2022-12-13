@@ -8,7 +8,7 @@ use OctopusOsc\Core\Commands\ModuleSetupCommand;
 
 class AppServiceProvider extends ServiceProvider
 {
-    const PREFIX = "admin";
+    const PREFIX = "OctopusOsc_AdminLayout";
     
     public function __construct($app)
     {
@@ -21,7 +21,8 @@ class AppServiceProvider extends ServiceProvider
             \OctopusOsc\AdminLayout\View\Components\AuthLayout::class,
             \OctopusOsc\AdminLayout\View\Components\BaseLayout::class
         ];
-        $this->loadViewComponentsAs(self::PREFIX, $classes);
+        $this->loadViewComponentsAs('admin', $classes);
+        $this->loadViewsFrom(__DIR__ . "/../resources/views", self::PREFIX);
     }
 
     public function register()

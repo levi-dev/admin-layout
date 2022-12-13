@@ -176,7 +176,7 @@ class Theme extends \OctopusOsc\AdminLayout\Core\Theme
             $path = str_replace('layout', 'layout/'.self::$demo, $path);
         }
 
-        $view = view("admin::" . $path, $params);
+        $view = view("OctopusOsc_AdminLayout::" . $path, $params);
 
         // Special fix to print _mega-menu content for Core/Theme.php
         if (strpos($path, '_mega-menu') !== false) {

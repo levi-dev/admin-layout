@@ -15,6 +15,6 @@ class AuthLayout extends Component
      */
     public function render()
     {
-        return view('admin::auth.layout', ['comment' => 'Sign-in', 'wrapperClass' => 'w-lg-500px']);
+        return view('OctopusOsc_AdminLayout::auth.layout', ['comment' => 'Sign-in', 'wrapperClass' => 'w-lg-500px']);
     }
 }
