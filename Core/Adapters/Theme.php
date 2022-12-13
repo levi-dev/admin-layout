@@ -475,7 +475,7 @@ class Theme extends \OctopusOsc\AdminLayout\Core\Theme
      */
     public function getMenu()
     {
-        $menus = self::getOption('menu');
+        $menus = config("menu-admin") ?: [];
 
         $output = [];
 
