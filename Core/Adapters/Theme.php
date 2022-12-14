@@ -429,6 +429,11 @@ class Theme extends \OctopusOsc\AdminLayout\Core\Theme
      */
     public function initConfig()
     {
+        config([Theme::$demo => config('backend.admin')]);
+        self::$config = config('backend.admin');
+        return;
+
+
         $mainConfig   = collect(config('global'));
         $demoConfig   = config(Theme::$demo);
         $mergedConfig = $mainConfig->replaceRecursive($demoConfig);
@@ -475,7 +480,7 @@ class Theme extends \OctopusOsc\AdminLayout\Core\Theme
      */
     public function getMenu()
     {
-        $menus = config("menu-admin") ?: [];
+        $menus = config('backend.menu') ?: [];
 
         $output = [];
 

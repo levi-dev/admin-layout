@@ -17,7 +17,6 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $view = theme()->getOption('pages', 'view');
         $pathPage = theme()->getOption('pages', 'page') ?: \App\Page\Dashboard::class;
         $callback = '\\' .  $pathPage . '@execute';
         return app()->call($callback, []);
