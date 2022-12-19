@@ -43,12 +43,12 @@
         <!--end::Root-->
 
         <!--begin::Drawers-->
-        {{ theme()->getView('partials/topbar/_activity-drawer') }}
-        {{ theme()->getView('pages/apps/chat/_partials/_drawer-messenger') }}
+{{--        {{ theme()->getView('partials/topbar/_activity-drawer') }}--}}
+{{--        {{ theme()->getView('pages/apps/chat/_partials/_drawer-messenger') }}--}}
         <!--end::Drawers-->
 
         <!--begin::Engage-->
-        {{ theme()->getView('partials/engage/_main') }}
+{{--        {{ theme()->getView('partials/engage/_main') }}--}}
         <!--end::Engage-->
 
         @if(theme()->getOption('layout', 'scrolltop/display') === true)

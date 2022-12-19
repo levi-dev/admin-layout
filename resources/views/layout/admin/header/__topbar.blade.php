@@ -13,15 +13,15 @@
     </div>
     <!--end::Search-->
 
-    <!--begin::Activities-->
-    <div class="d-flex align-items-center {{ $itemClass }}">
-        <!--begin::Drawer toggle-->
-        <div class="{{ $btnClass }}" id="kt_activities_toggle">
-            {!! theme()->getSvgIcon("icons/duotune/general/gen032.svg", $btnIconClass) !!}
-        </div>
-        <!--end::Drawer toggle-->
-    </div>
-    <!--end::Activities-->
+{{--    <!--begin::Activities-->--}}
+{{--    <div class="d-flex align-items-center {{ $itemClass }}">--}}
+{{--        <!--begin::Drawer toggle-->--}}
+{{--        <div class="{{ $btnClass }}" id="kt_activities_toggle">--}}
+{{--            {!! theme()->getSvgIcon("icons/duotune/general/gen032.svg", $btnIconClass) !!}--}}
+{{--        </div>--}}
+{{--        <!--end::Drawer toggle-->--}}
+{{--    </div>--}}
+{{--    <!--end::Activities-->--}}
 
     <!--begin::Notifications-->
     <div class="d-flex align-items-center {{ $itemClass }}">
@@ -34,18 +34,18 @@
     </div>
     <!--end::Notifications-->
 
-    <!--begin::Chat-->
-    <div class="d-flex align-items-center {{ $itemClass }}">
-        <!--begin::Menu wrapper-->
-        <div class="{{ $btnClass }} position-relative" id="kt_drawer_chat_toggle">
-            {!! theme()->getSvgIcon("icons/duotune/communication/com012.svg", $btnIconClass) !!}
+{{--    <!--begin::Chat-->--}}
+{{--    <div class="d-flex align-items-center {{ $itemClass }}">--}}
+{{--        <!--begin::Menu wrapper-->--}}
+{{--        <div class="{{ $btnClass }} position-relative" id="kt_drawer_chat_toggle">--}}
+{{--            {!! theme()->getSvgIcon("icons/duotune/communication/com012.svg", $btnIconClass) !!}--}}
 
-            <span class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink">
-            </span>
-        </div>
-        <!--end::Menu wrapper-->
-    </div>
-    <!--end::Chat-->
+{{--            <span class="bullet bullet-dot bg-success h-6px w-6px position-absolute translate-middle top-0 start-50 animation-blink">--}}
+{{--            </span>--}}
+{{--        </div>--}}
+{{--        <!--end::Menu wrapper-->--}}
+{{--    </div>--}}
+{{--    <!--end::Chat-->--}}
 
     <!--begin::Quick links-->
     <div class="d-flex align-items-center {{ $itemClass }}">
