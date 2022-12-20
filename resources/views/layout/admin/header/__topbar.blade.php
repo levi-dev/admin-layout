@@ -8,9 +8,11 @@
 
 <!--begin::Toolbar wrapper-->
 <div class="d-flex align-items-stretch flex-shrink-0">
+
     @foreach ($topbars as $topbar)
-        {{ view($topbar) }}
+        {{ view($topbar['view'], $topbar['data']) }}
     @endforeach
+
     <!--begin::Header menu toggle-->
         @if(theme()->getOption('layout', 'header/left') === 'menu')
             <div class="d-flex align-items-center d-lg-none ms-2 me-n3" data-bs-toggle="tooltip" title="Show header menu">
