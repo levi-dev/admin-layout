@@ -3,13 +3,13 @@
     $btnClass = "btn btn-icon btn-icon-muted btn-active-light btn-active-color-primary w-30px h-30px w-md-40px h-md-40px";
     $userAvatarClass = "symbol-30px symbol-md-40px";
     $btnIconClass = "svg-icon-1";
-    $topbars = config('backend.topbars');
+    $topbars = config('backend.topbar');
 @endphp
 
 <!--begin::Toolbar wrapper-->
 <div class="d-flex align-items-stretch flex-shrink-0">
     @foreach ($topbars as $topbar)
-        {{ view($topbar) }}
+        {{ view($topbar['template']) }}
     @endforeach
     <!--begin::Header menu toggle-->
         @if(theme()->getOption('layout', 'header/left') === 'menu')
