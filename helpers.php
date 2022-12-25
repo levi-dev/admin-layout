@@ -219,6 +219,6 @@ if (!function_exists('preloadCss')) {
 if (!function_exists('backendPath')) {
     function backendPath($path)
     {
-        return env('BACKEND_FRONTNAME') . '/' . $path;
+        return env('BACKEND_FRONTNAME', 'admin') . '/' . $path;
     }
 }

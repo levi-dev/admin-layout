@@ -480,7 +480,10 @@ class Theme extends \OctopusOsc\AdminLayout\Core\Theme
      */
     public function getMenu()
     {
-        $menus = config('backend.menu') ?: [];
+        $menus = [];
+
+        $menus['main'] = config('backend.menu') ?: [];
+        $menus['horizontal'] = config('backend.horizontal') ?: [];
 
         $output = [];
 

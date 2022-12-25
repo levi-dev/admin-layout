@@ -21,7 +21,7 @@
          id="#kt_header_menu"
          data-kt-menu="true"
     >
-        {!! $menu->build() !!}
+        {!! $menu->build('horizontal') !!}
     </div>
     <!--end::Menu-->
 </div>

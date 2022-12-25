@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <menu name="catalog" title="Catalog" sortOrder="1"></menu>
+    <menu name="Dashboards" title="Dashboards" sortOrder="0"></menu>
+    <menu name="categories" title="Categories" parent="catalog" sortOrder="6"></menu>
+    <menu name="product" title="Product" parent="catalog" sortOrder="1" icon="icons/duotune/abstract/abs027.svg"></menu>
+    <menu name="product2" title="Product 2" parent="product" path="abc" sortOrder="1"></menu>
+
+    <menu name="sales" title="Sales" sortOrder="1"></menu>
+    <menu name="orders" title="Orders" parent="sales" sortOrder="1"></menu>
+    <menu name="invoices" title="Invoices" parent="sales" sortOrder="1"></menu>
+    <menu name="shipments" title="Shipments" parent="sales" sortOrder="1"></menu>
+    <menu name="transactions" title="Transactions" parent="sales" sortOrder="1"></menu>
+</config>

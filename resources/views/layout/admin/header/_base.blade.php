@@ -4,7 +4,7 @@
 	<div class="{{ theme()->printHtmlClasses('header-container', false) }} d-flex align-items-stretch justify-content-between">
 		<!--begin::Aside mobile toggle-->
 		@if (theme()->getOption('layout', 'aside/display') === true)
-			<div class="d-flex align-items-center d-lg-none ms-n3 me-1" data-bs-toggle="tooltip" title="Show aside menu">
+			<div class="d-flex align-items-center d-lg-none ms-n3 me-1">
 				<div class="btn btn-icon btn-active-light-primary" id="kt_aside_mobile_toggle">
 					{!! theme()->getSvgIcon("icons/duotune/abstract/abs015.svg", "svg-icon-2x mt-1") !!}
 				</div>

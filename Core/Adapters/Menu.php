@@ -11,11 +11,11 @@ namespace OctopusOsc\AdminLayout\Core\Adapters;
  */
 class Menu extends \OctopusOsc\AdminLayout\Core\Menu
 {
-    public function build()
+    public function build($area = 'main')
     {
         ob_start();
 
-        parent::build();
+        parent::build($area);
 
         return ob_get_clean();
     }

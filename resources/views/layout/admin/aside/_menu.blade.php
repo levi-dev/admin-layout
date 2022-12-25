@@ -16,7 +16,7 @@
 >
     {{--begin::Menu--}}
     <div class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500" id="#kt_aside_menu" data-kt-menu="true">
-        {!! $menu->build() !!}
+        {!! $menu->build('main') !!}
     </div>
     {{--end::Menu--}}
 </div>

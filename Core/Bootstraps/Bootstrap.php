@@ -134,7 +134,7 @@ class Bootstrap extends BootstrapBase {
     }
 
     private static function initAsideMenu() {
-        self::$asideMenu = new Menu(config("menu-admin.main") ?: [], Theme::getPagePath() );
+        self::$asideMenu = new Menu(config("backend.menu", []), Theme::getPagePath() );
 
         if (Theme::getOption('layout', 'aside/menu-icons-display') === false) {
             self::$asideMenu->displayIcons(false);
@@ -144,7 +144,7 @@ class Bootstrap extends BootstrapBase {
     }
 
     private static function initHorizontalMenu() {
-        self::$horizontalMenu = new Menu(config("menu-admin.horizontal") ?: [], Theme::getPagePath() );
+        self::$horizontalMenu = new Menu(config("backend.horizontal", []), Theme::getPagePath() );
         self::$horizontalMenu->setItemLinkClass('py-3');
         self::$horizontalMenu->setIconType(Theme::getOption('layout', 'header/menu-icon', 'svg'));
     }
